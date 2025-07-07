@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{504173D0-8C69-4090-8CF8-A77A686A2A0A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>admin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="adminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminLogin.Designer.cs">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminTable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CarOwnerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarOwnerInfo.Designer.cs">
+      <DependentUpon>CarOwnerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertInfo.Designer.cs">
+      <DependentUpon>ExpertInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="expertlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="expertlogin.Designer.cs">
+      <DependentUpon>expertlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="expertLoginDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>expertLoginDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback.Designer.cs">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerInfo.Designer.cs">
+      <DependentUpon>OwnerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ownerQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ownerQuery.Designer.cs">
+      <DependentUpon>ownerQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QueryTable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegExpert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegExpert.Designer.cs">
+      <DependentUpon>RegExpert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationOwner.Designer.cs">
+      <DependentUpon>RegistrationOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalQuery.Designer.cs">
+      <DependentUpon>TotalQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userLoginDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>userLoginDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleParts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehicleParts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VehInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehInfo.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminLogin.resx">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarOwnerInfo.resx">
+      <DependentUpon>CarOwnerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertInfo.resx">
+      <DependentUpon>ExpertInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expertlogin.resx">
+      <DependentUpon>expertlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback.resx">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerInfo.resx">
+      <DependentUpon>OwnerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ownerQuery.resx">
+      <DependentUpon>ownerQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegExpert.resx">
+      <DependentUpon>RegExpert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationOwner.resx">
+      <DependentUpon>RegistrationOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalQuery.resx">
+      <DependentUpon>TotalQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="admin.xsc">
+      <DependentUpon>admin.xsd</DependentUpon>
+    </None>
+    <None Include="admin.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>admin.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="admin.xss">
+      <DependentUpon>admin.xsd</DependentUpon>
+    </None>
+    <None Include="AdminTable.xsc">
+      <DependentUpon>AdminTable.xsd</DependentUpon>
+    </None>
+    <None Include="AdminTable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdminTable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdminTable.xss">
+      <DependentUpon>AdminTable.xsd</DependentUpon>
+    </None>
+    <None Include="expertLoginDataSet.xsc">
+      <DependentUpon>expertLoginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="expertLoginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>expertLoginDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="expertLoginDataSet.xss">
+      <DependentUpon>expertLoginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QueryTable.xsc">
+      <DependentUpon>QueryTable.xsd</DependentUpon>
+    </None>
+    <None Include="QueryTable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QueryTable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QueryTable.xss">
+      <DependentUpon>QueryTable.xsd</DependentUpon>
+    </None>
+    <None Include="userLoginDBDataSet.xsc">
+      <DependentUpon>userLoginDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="userLoginDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>userLoginDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="userLoginDBDataSet.xss">
+      <DependentUpon>userLoginDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleParts.xsc">
+      <DependentUpon>VehicleParts.xsd</DependentUpon>
+    </None>
+    <None Include="VehicleParts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehicleParts.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VehicleParts.xss">
+      <DependentUpon>VehicleParts.xsd</DependentUpon>
+    </None>
+    <None Include="VehInfo.xsc">
+      <DependentUpon>VehInfo.xsd</DependentUpon>
+    </None>
+    <None Include="VehInfo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehInfo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VehInfo.xss">
+      <DependentUpon>VehInfo.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-183545763-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-11549451816vveciq8qbi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1313710252-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Media.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Media1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-183545763-612x6121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AdminTable.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AdminTable_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AdminTable.mdf</DependentUpon>
+    </Content>
+    <Content Include="admin_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>admin.mdf</DependentUpon>
+    </Content>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="OwnerReg.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OwnerReg_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>OwnerReg.mdf</DependentUpon>
+    </Content>
+    <Content Include="QueryTable.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="QueryTable_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>QueryTable.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\shared image.jpg" />
+    <None Include="Resources\shared image1.jpg" />
+    <None Include="Resources\shared image %281%29.jpg" />
+    <None Include="Resources\shared image %282%29.jpg" />
+    <None Include="Resources\Media2.jpg" />
+    <None Include="Resources\Media %281%29.jpg" />
+    <None Include="Resources\shared image %283%29.jpg" />
+    <None Include="Resources\Media %282%29.jpg" />
+    <None Include="Resources\Media %283%29.jpg" />
+    <None Include="Resources\Media %284%29.jpg" />
+    <None Include="Resources\Media %285%29.jpg" />
+    <None Include="Resources\Media %286%29.jpg" />
+    <None Include="Resources\Media %287%29.jpg" />
+    <Content Include="userLoginDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="userLoginDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>userLoginDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="VehicleParts.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VehicleParts_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>VehicleParts.mdf</DependentUpon>
+    </Content>
+    <Content Include="VehInfo.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VehInfo_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>VehInfo.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
